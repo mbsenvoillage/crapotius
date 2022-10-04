@@ -6,7 +6,7 @@ export interface IButtonProps
     color?: string;
 }
 
-const Button: React.FunctionComponent<IButtonProps> = (props) => {
+export const Button: React.FunctionComponent<IButtonProps> = (props) => {
     const { children, backgroundColor, color, style } = props;
 
     let _style: React.CSSProperties = style || {};
@@ -18,5 +18,3 @@ const Button: React.FunctionComponent<IButtonProps> = (props) => {
         </button>
     );
 };
-
-export default Button;
